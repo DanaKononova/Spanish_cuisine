@@ -1,0 +1,296 @@
+/* Сброс стилей */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/* Основные стили */
+body {
+    font-family: Arial, sans-serif;
+    font-size: 16px;
+    line-height: 1.5;
+    background-color: #f1b28e;
+    color: #333;
+    height: 100%;
+}
+
+.container {
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 0 20px;
+}
+
+header {
+    background-color: #f8761b;
+    padding: 20px 0;
+}
+
+.header-content {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.logo {
+    font-size: 24px;
+    font-weight: bold;
+    color: #efdad0;
+    text-decoration: none;
+}
+
+.nav {
+    display: flex;
+    list-style: none;
+}
+
+.nav li {
+    margin-left: 20px;
+}
+
+.nav li:first-child {
+    margin-left: 0;
+}
+
+.nav a {
+    color: #fff;
+    text-decoration: none;
+}
+
+.nav a:hover {
+    text-decoration: underline;
+}
+
+.main {
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 40px 0;
+    flex-grow: 1;
+}
+
+.main h1 {
+    font-size: 32px;
+    font-weight: bold;
+    margin-bottom: 20px;
+    text-align: center;
+}
+
+.main h2 {
+    font-size: 28px;
+    font-weight: bold;
+    margin-bottom: 20px;
+}
+
+.main h3 {
+    font-size: 22px;
+    font-weight: bold;
+    margin-bottom: 10px;
+    margin-top: 20px;
+}
+
+.image-description {
+    display: inline-block;
+    margin-right: 20px;
+}
+
+.main p {
+    font-size: 16px;
+    font-weight: bold;
+    margin-bottom: 10px;
+}
+
+.main ul {
+    margin-left: 0;
+    list-style: none;
+}
+
+.container label {
+    display: block;
+    margin-bottom: 5px;
+}
+
+.container input, .container textarea {
+    padding: 5px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    margin-bottom: 10px;
+}
+
+.container textarea {
+    height: 100px;
+}
+
+.container button[type="submit"] {
+    display: flex;
+    padding: 10px 20px;
+    border: none;
+    border-radius: 5px;
+    background-color: #333;
+    color: #fff;
+    cursor: pointer;
+}
+
+.container form {
+    display: flex;
+    flex-direction: column;
+    margin-bottom: 20px;
+    width: 20%;
+}
+
+.container select {
+    padding: 10px;
+    margin-bottom: 10px;
+    border-radius: 5px;
+    border: 1px solid #ccc;
+    width: 100%;
+    box-sizing: border-box;
+}
+
+.socials {
+    display: flex;
+    margin-left: 0;
+    list-style: none;
+    color: #000000;
+}
+
+.socials li {
+    margin-left: 20px;
+}
+
+.socials li:first-child{
+    margin-left: 0;
+    margin-right: 40px;
+}
+
+.recipes-list li{
+    margin-left: 40px;
+}
+
+.main li {
+    margin-bottom: 15px;
+    margin-top: 10px;
+}
+
+.main ul, .main ol {
+    margin-left: 20px;
+}
+
+.main ol {
+    list-style-type: decimal;
+    margin-bottom: 20px;
+}
+
+.main img {
+    width: 300px;
+    height: auto;
+}
+
+.main li:last-child {
+    margin-bottom: 0;
+}
+
+footer {
+    background-color: #f8761b;
+    padding: 20px 0;
+    bottom: 0;
+    width: 100%;
+    align-self: flex-end;
+}
+
+.footer-container {
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 0 20px;
+    display: flex;
+    flex-direction: column;
+}
+
+.footer-content {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.footer-nav {
+    display: flex;
+    list-style: none;
+}
+
+.footer-nav li {
+    margin-left: 20px;
+}
+
+.footer-nav li:first-child {
+    margin-left: 0;
+}
+
+.footer-nav a {
+    color: #3b3b3b;
+    text-decoration: none;
+}
+
+.footer-nav a:hover {
+    text-decoration: underline;
+}
+
+@media only screen and (max-width: 767px) {
+    body {
+        font-size: 14px;
+    }
+
+    .container {
+        padding: 0 10px;
+    }
+
+    header {
+        padding: 10px 0;
+    }
+
+    .header-content {
+        flex-direction: column;
+        align-items: flex-start;
+    }
+
+    .logo {
+        margin-bottom: 10px;
+    }
+
+    .nav {
+        margin-top: 10px;
+    }
+
+    .nav li {
+        margin-left: 0;
+        margin-right: 20px;
+    }
+
+    .main {
+        padding: 20px 0;
+    }
+
+    .main h1 {
+        font-size: 28px;
+    }
+
+    .main h2 {
+        font-size: 24px;
+    }
+
+    .main h3 {
+        font-size: 20px;
+    }
+
+    .image-description {
+        margin-right: 10px;
+    }
+
+    .recipes-list li {
+        margin-left: 20px;
+        margin-right: 20px;
+    }
+
+    .footer-nav li {
+        margin-left: 0;
+        margin-right: 20px;
+    }
+}
